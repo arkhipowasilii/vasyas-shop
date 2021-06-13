@@ -1,5 +1,4 @@
 from typing import List
-from datetime import datetime
 import json
 
 
@@ -17,6 +16,11 @@ class Product:
         self.price = price
         self.amount = amount
 
+    def __eq__(self, other) -> bool:
+        if self.name == other.name:
+            return True
+        return False
+
 
 class Item:
     def __init__(self, product: Product, amount: int):
@@ -25,15 +29,16 @@ class Item:
 
 
 class Order:
-    def __init__(self, lst_items: List[Item], status: int):
+    def __init__(self, lst_items: List[Item], status: str, id: str, datetime: str, login: str):
+        self.login = login
         self.lst_items = lst_items
         self.status = status
-        self.number = self.get_number()
-        self.date = datetime.now()
-
-    def get_number(self):
-        return
+        self.id: str = id
+        self.datetime = datetime
 
 
 if __name__ == '__main__':
-    pass
+    p = Product("ggg", 400, 79)
+    pr_lst = [Item(p, 1)]
+    if pr_lst[0].product == p:
+        print(1)

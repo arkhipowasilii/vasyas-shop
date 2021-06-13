@@ -1,0 +1,1 @@
+{"1": {"login": "v", "status": "sent", "datetime": "2021-06-13 21:57:45.098526", "item_lst": [["Milk 1L", 4], ["Orange juice 1L", 12], ["Coke 1L", 2]]}, "2": {"login": "v", "status": "created", "datetime": "", "item_lst": [["Milk 1L", 1], ["Orange juice 1L", 2], ["Coke 1L", 2]]}, "3": {"login": "i", "status": "complete", "datetime": "2021-06-13 23:39:44.460979", "item_lst": []}}
